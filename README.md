@@ -14,15 +14,15 @@ It is a website developed using Flask ,which includes daily updates of Covid-19 
   
   
   
-1.  run "main.py" after that once server is running you will be accesing "/" route which invokes "home()" which includes:-
+run "main.py" after that once server is running you will be accesing "/" route which invokes "home()" which includes:-
 
-    makejson():- request covid data from "https://api.rootnet.in/covid19-in/stats/latest" and store it in json format "data_file.json".
-    
-    makecsv():- converts data_file.json  to csv  as "data_file.csv".
+makejson():- request covid data from "https://api.rootnet.in/covid19-in/stats/latest" and store it in json format "data_file.json".
 
-    read data_file.csv and pass access specific columns , store it as "cases_list" and dump it as json format to "home.html". 
+makecsv():- converts data_file.json  to csv  as "data_file.csv".
 
-    ("template" variable includes html code written using cases_list every time you access / route and stored it as "overall.html")
+read data_file.csv and pass access specific columns , store it as "cases_list" and dump it as json format to "home.html". 
+
+("template" variable includes html code written using cases_list every time you access / route and stored it as "overall.html")
     
     
     
